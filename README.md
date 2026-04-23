@@ -4,7 +4,7 @@
 >
 > Follow me on X: [https://x.com/jiayuan_jy](https://x.com/jiayuan_jy)
 
-A single `CLAUDE.md` file to improve Claude Code behavior, derived from [Andrej Karpathy's observations](https://x.com/karpathy/status/2015883857489522876) on LLM coding pitfalls.
+A single file to improve AI coding assistant behavior, derived from [Andrej Karpathy's observations](https://x.com/karpathy/status/2015883857489522876) on LLM coding pitfalls. Works with Claude Code, GitHub Copilot, and Cursor.
 
 English | [简体中文](./README.zh.md)
 
@@ -125,9 +125,25 @@ echo "" >> CLAUDE.md
 curl https://raw.githubusercontent.com/forrestchang/andrej-karpathy-skills/main/CLAUDE.md >> CLAUDE.md
 ```
 
+**Option C: GitHub Copilot (per-project)**
+
+This repository includes `.github/copilot-instructions.md` — Copilot's official repository-level custom instructions file. Copy it into your project:
+
+```bash
+mkdir -p .github
+curl -o .github/copilot-instructions.md \
+  https://raw.githubusercontent.com/mtopps/andrej-karpathy-skills/main/.github/copilot-instructions.md
+```
+
+Copilot (in VS Code, JetBrains, etc.) reads this file automatically and applies the guidelines to chat and inline suggestions. See **[COPILOT.md](COPILOT.md)** for global setup, Copilot CLI notes, and more.
+
 ## Using with Cursor
 
 This repository includes a committed Cursor project rule ([`.cursor/rules/karpathy-guidelines.mdc`](.cursor/rules/karpathy-guidelines.mdc)) so the same guidelines apply when you open the project in Cursor. See **[CURSOR.md](CURSOR.md)** for setup, using the rule in other projects, and how this relates to Claude Code.
+
+## Using with GitHub Copilot
+
+This repository includes [`.github/copilot-instructions.md`](.github/copilot-instructions.md) so the same guidelines apply when you use GitHub Copilot in VS Code, JetBrains, or any supported editor. See **[COPILOT.md](COPILOT.md)** for setup, global instructions, and Copilot CLI guidance.
 
 ## Key Insight
 

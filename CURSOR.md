@@ -25,4 +25,9 @@ If you want the same content as a reusable skill under `~/.cursor/skills`, use [
 
 ## For contributors
 
-When you change the four principles, keep **[`CLAUDE.md`](CLAUDE.md)** and **[`.cursor/rules/karpathy-guidelines.mdc`](.cursor/rules/karpathy-guidelines.mdc)** in sync. If the published skill/plugin text should match, update **[`skills/karpathy-guidelines/SKILL.md`](skills/karpathy-guidelines/SKILL.md)** as well.
+When you change the four principles, keep the following files in sync:
+
+- **[`CLAUDE.md`](CLAUDE.md)** — Claude Code per-project instructions
+- **[`.cursor/rules/karpathy-guidelines.mdc`](.cursor/rules/karpathy-guidelines.mdc)** — Cursor project rule
+- **[`.github/copilot-instructions.md`](.github/copilot-instructions.md)** — GitHub Copilot repository instructions
+- **[`skills/karpathy-guidelines/SKILL.md`](skills/karpathy-guidelines/SKILL.md)** — Claude Code plugin skill
